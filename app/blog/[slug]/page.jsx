@@ -1,5 +1,5 @@
 import posts from "@/data/posts"
-import Slug from "@/pages/Slug"
+import Slug from "@/components/Slug"
 
 import { notFound } from "next/navigation"
 
