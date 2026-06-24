@@ -1,0 +1,135 @@
+@import url('./fonts/bitter-rose/stylesheet.css');
+@import url('./fonts/cabinet-grotesk/stylesheet.css');
+/* ================= FONTS (GOOGLE) ================= */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Comforter+Brush');
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+@import url('https://fonts.googleapis.com/css?family=Mulish:200,300,400,500,600,700,800,900');
+
+/* ================= BASE ================= */
+@import './base/reset.css';
+@import './base/base.css';
+
+/* ================= BLOCKS ================= */
+@import './blocks/alerts.css';
+@import './blocks/header.css';
+@import './blocks/logo.css';
+@import './blocks/nav.css';
+@import './blocks/main.css';
+@import './blocks/section.css';
+@import './blocks/item.css';
+@import './blocks/single.css';
+@import './blocks/form.css';
+@import './blocks/content-page.css';
+@import './blocks/book.css';
+@import './blocks/blog.css';
+@import './blocks/footer.css';
+@import './blocks/cookies-popup.css';
+
+/* ========== 404 ========== */
+
+.not-found {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.not-found__code {
+  font-size: 140px;
+  line-height: 1;
+  font-weight: 700;
+
+  opacity: 0.08;
+}
+
+.not-found__title {
+  margin-top: -40px;
+
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.not-found__text {
+  max-width: 520px;
+
+  margin-top: 20px;
+
+  color: rgba(255, 255, 255, 0.7);
+
+  line-height: 1.7;
+}
+
+.not-found__button {
+  margin-top: 40px;
+
+  padding: 14px 28px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
+
+  transition: 0.25s ease;
+
+  text-decoration: none;
+}
+
+.not-found__button:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255,255,255,0.06);
+}
+
+
+
+/* ========== LOADING ========== */
+
+.loading {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.loading__circle {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  border: 3px solid rgba(255,255,255,0.08);
+  border-top-color: #fff;
+
+  animation: spin 1s linear infinite;
+}
+
+.loading__title {
+  margin-top: 30px;
+
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.loading__text {
+  margin-top: 12px;
+
+  color: rgba(255,255,255,0.7);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.book-form__submit:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
