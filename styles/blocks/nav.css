@@ -6,50 +6,79 @@
 
 	border-radius: 100px;
 	padding: 10px;
-	/* width: 520px; */
+
 	height: 68px;
 
 	background: var(--text-default);
 }
 
-@media (max-width: 600px) {
-	.nav {
-		flex-direction: column;
-		width: auto;
-		height: auto;
-		border-radius: 30px;
-	}
-}
 
 .nav-link {
 	flex-shrink: 0;
+
 	padding: 16px;
 
 	font-family: var(--font-family);
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 100%;
+
 	color: var(--text-inverse);
 }
 
-@media (max-width: 600px) {
-	.nav-link {
-		width: 100%;
-		text-align: center;
-	}
-}
 
 .nav-link.active,
 .nav-link:hover {
 	border-radius: 100px;
-	/* background: #f8f8f8; */
-	/* background: #eeeeee; */
 	background: #dddddd;
-	/* font-weight: 700; */
 }
+
 
 .nav-link.primary {
 	border-radius: 100px;
 	background: #111;
 	color: #fff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+	.nav {
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+		height: auto;
+		width: auto;
+
+		padding: 6px;
+		gap: 4px;
+
+		border-radius: 100px;
+	}
+
+
+	.nav-link {
+		width: auto;
+
+		padding: 10px 8px;
+
+		font-size: 13px;
+
+		white-space: nowrap;
+	}
+
+}
+
+
+/* маленькие телефоны */
+
+@media (max-width: 450px) {
+
+	.nav-link {
+		padding: 9px 6px;
+		font-size: 12px;
+	}
+
 }
